@@ -13,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "content": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "files": {
       "type": "media",
@@ -24,16 +26,13 @@
       "required": false,
       "allowedTypes": [
         "images",
-        "files",
         "videos",
-        "audios"
+        "audios",
+        "files"
       ]
     },
     "published_date": {
       "type": "date"
-    },
-    "tags": {
-      "type": "string"
     },
     "comments": {
       "type": "relation",
@@ -50,18 +49,40 @@
     "article_type": {
       "type": "enumeration",
       "enum": [
-        "manifesto",
-        "arts",
+        "music",
+        "photography",
+        "video",
+        "literature",
+        "paintings",
         "publications"
       ]
     },
     "article_image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false,
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
       "required": true
+    },
+    "views": {
+      "type": "integer",
+      "default": 0
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "short_about": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
     }
   }
 }

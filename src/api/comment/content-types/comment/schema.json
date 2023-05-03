@@ -21,7 +21,7 @@
     "published_date": {
       "type": "date"
     },
-    "Approved": {
+    "approved": {
       "type": "boolean"
     },
     "article": {

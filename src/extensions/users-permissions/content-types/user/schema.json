@@ -76,7 +76,7 @@
       "type": "string"
     },
     "about": {
-      "type": "string"
+      "type": "text"
     },
     "date_of_birth": {
       "type": "date"
@@ -95,6 +95,10 @@
     },
     "website": {
       "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
     }
   }
 }

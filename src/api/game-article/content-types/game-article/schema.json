@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_articles",
+  "info": {
+    "singularName": "game-article",
+    "pluralName": "game-articles",
+    "displayName": "Game Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "about": {
+      "type": "richtext"
+    },
+    "short_about": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "igrarnik",
+        "dnevnik",
+        "svastara"
+      ]
+    }
+  }
+}
