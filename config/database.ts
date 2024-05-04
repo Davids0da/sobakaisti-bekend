@@ -8,7 +8,7 @@ export default ({ env }) => ({
       database: env('DATABASE_NAME', 'sobakaisti'),
       user: env('DATABASE_USERNAME', 'postgres'),
       password: env('DATABASE_PASSWORD', 'postgres'),
-      ssl: env.bool('DATABASE_SSL', false),
+      ssl: env.bool('DATABASE_SSL', true),
     },
   },
 });
