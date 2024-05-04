@@ -9,7 +9,7 @@ export default factories.createCoreController('api::game-article.game-article',(
     async findOne(ctx) {
       const { id } = ctx.params;
   
-      const entity = await strapi.db.query('api::game-article.game-article').findOne({where: { slug: id }, populate: ['image']});
+      const entity = await strapi.db.query('api::game-article.game-article').findOne({where: { slug: id }, populate: ['image', 'tags']});
   
       const sanitizedEntity = await this.sanitizeOutput(entity, ctx);
   

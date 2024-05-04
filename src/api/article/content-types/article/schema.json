@@ -74,15 +74,15 @@
       "type": "integer",
       "default": 0
     },
-    "tags": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tag.tag"
-    },
     "short_about": {
       "type": "string",
       "required": true,
       "maxLength": 30
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
     }
   }
 }
