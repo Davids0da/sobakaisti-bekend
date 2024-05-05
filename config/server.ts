@@ -1,5 +1,5 @@
 export default ({ env }) => ({
-  url: 'https://sobakaisti.org',
+  url: 'https://api.sobakaisti.org',
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
   app: {
