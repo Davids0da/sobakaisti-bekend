@@ -75,9 +75,6 @@
     "last_name": {
       "type": "string"
     },
-    "about": {
-      "type": "text"
-    },
     "date_of_birth": {
       "type": "date"
     },
@@ -99,6 +96,9 @@
     "slug": {
       "type": "uid",
       "required": true
+    },
+    "about": {
+      "type": "richtext"
     }
   }
 }
