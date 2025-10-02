@@ -22,13 +22,13 @@
     },
     "marker_lat": {
       "type": "float",
-      "required": false,
+      "required": true,
       "precision": 10,
       "scale": 6
     },
     "marker_lang": {
       "type": "float",
-      "required": false,
+      "required": true,
       "precision": 10,
       "scale": 6
     },
