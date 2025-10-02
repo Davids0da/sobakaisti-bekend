@@ -21,11 +21,11 @@
       "required": true
     },
     "marker_lat": {
-      "type": "decimal",
+      "type": "float",
       "required": true
     },
     "marker_lang": {
-      "type": "decimal",
+      "type": "float",
       "required": true
     },
     "marker_type": {
