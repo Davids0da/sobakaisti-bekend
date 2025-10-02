@@ -22,11 +22,15 @@
     },
     "marker_lat": {
       "type": "float",
-      "required": true
+      "required": true,
+      "precision": 10,
+      "scale": 6
     },
     "marker_lang": {
       "type": "float",
-      "required": true
+      "required": true,
+      "precision": 10,
+      "scale": 6
     },
     "marker_type": {
       "type": "enumeration",
